@@ -1,14 +1,21 @@
 html {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 @font-face {
   font-family: 'MyFont';
   src: url('fonts/myfont.ttf') format('truetype');
 }
 .bg{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background-image: url(https://cloud-8lg3arssi-hack-club-bot.vercel.app/0image.png);
   background-size: cover;
+  background-repeat: no-repeat; /*no repeat no grid of images when zoom out*/
+  background-attachment: fixed; /*makes it stay at the same place*/
+  background-position: center center; /*centers the image*/
+  height:100%; 
 }
 .profile {
   width: 80px;
@@ -16,6 +23,7 @@ html {
   border-radius: 50%; /* Makes the image circular */
   object-fit: cover;
   object-position: center;
+  margin-left: 10px;
   
 }
 
@@ -35,13 +43,21 @@ html {
   outline-offset: 0.5rem;
   border-top: 0px;
 }
+
 .head{
   font-size: 26px;
+  margin: 10px;
+  padding:0;
 }
+
 .desc{ 
-  padding:5px; /* can use class name to do css*/
+  padding:10px; /* can use class name to do css*/
   margin:10px;
   background: linear-gradient(to bottom, rgb(77, 138, 219,.9) 0%, rgb(58, 42, 137,0.2) 100%);
   border-radius: 16px;
   color: #ffffff;
+}
+.desc p {
+  margin: 0; /* Remove margin from paragraphs inside .desc */
+  padding: 0; /* Remove padding from paragraphs inside .desc */
 }

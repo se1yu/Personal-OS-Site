@@ -6,39 +6,45 @@
 </head>
 
 <body class="bg">
-    <div
-      style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.125); color: #fff; justify-content: space-evenly; gap: 32px;"> 
+    <div class="topBar"
+      style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.2); color: #fff; justify-content: space-evenly; gap: 32px; top:0; left: 0;"> 
       <!--/* https://www.w3schools.com/cssref/playdemo.php?filename=playcss_justify */-->
-    <p style="margin-left: 16px; font-weight: 700; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
-      JeslynOS
+    <p style="margin-left: 16px; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
+      @ se1yu
     </p>
       
     <p style="margin-left: 16px; background-color: rgba(256, 256, 256, 0.25); padding: 4px 12px; border-radius: 16px;">
-      Meow
+      🌱 meow 🐈
     </p>
       
-      <p
+      <p id = "time"
         style="margin-right: 16px; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
-      7/1/2024 2:24PM
+      Time
     </p>
     
-  </div>
+    </div>
   
-  <div class="firstWindow"  style= " position:absolute; padding:40px; width:fit-content ">
+  <div class="firstWindow"  style= " position:absolute; padding:10px; width:fit-content ">
 
     
     <!-- position absolute: window is relative to screen instead of other items -->
     <img class="profile" src="https://cloud-5vor326f6-hack-club-bot.vercel.app/0image.png" alt="Profile Picture">
+    <img class = "linkedin" src=./linked.svg width = "32px"; height="32px">
+    <img class = "insta" src=./insta.svg width = "32px"; height="32px">
+    <img class = "github" src=./github.svg>
+  
     <div class="desc"> <!-- div is what i can put around a section: class in first div to name it -->
-      <h1 class="head">jeslynOS</h1>
-      <p>jeslynOS; answering the one question you may have</p>
-      <p>Who is <a href="https://www.google.com">Jeslyn</a>?</p>
+      <p class="head" style="padding-left: 0;">jeslynOS</p>
+      <p> Answering the one question you have...</p>
+      <p> Who is <a href="https://www.google.com">Jeslyn</a>?</p>
     </div>
 
     
   </div>
 
   
+  <script src="script.js"> </script>
+ 
 </body>
 
 
