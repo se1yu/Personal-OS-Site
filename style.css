@@ -6,24 +6,42 @@ html {
   font-family: 'MyFont';
   src: url('fonts/myfont.ttf') format('truetype');
 }
-
+.bg{
+  background-image: url(https://cloud-8lg3arssi-hack-club-bot.vercel.app/0image.png);
+  background-size: cover;
+}
 .profile {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%; /* Makes the image circular */
   object-fit: cover;
   object-position: center;
+  
 }
 
-.baka{
-  border: 0.5rem outset #c2ceff;
-  outline: 0.5rem solid skyblue;
-  box-shadow: 0 0 0 2rem #7378bf;
+.firstWindow{
+  top: 50%;
+  left: 50%;
+  background-color: #ffffff;
+  transform: translate(-60%, -60%);
+  border: 0.5rem outset #fafafa;
+  outline: 0.5rem solid #6178bd;
+
   border-radius: 12px;
   font: bold 1rem sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   margin: 2rem;
   padding: 1rem;
   outline-offset: 0.5rem;
   border-top: 0px;
+}
+.head{
+  font-size: 26px;
+}
+.desc{ 
+  padding:5px; /* can use class name to do css*/
+  margin:10px;
+  background: linear-gradient(to bottom, rgb(77, 138, 219,.9) 0%, rgb(58, 42, 137,0.2) 100%);
+  border-radius: 16px;
+  color: #ffffff;
 }
