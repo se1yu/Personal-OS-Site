@@ -6,6 +6,7 @@
 </head>
 
 <body class="bg">
+  
     <div class="topBar"
       style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.2); color: #fff; justify-content: space-evenly; gap: 32px; top:0; left: 0;"> 
       <!--/* https://www.w3schools.com/cssref/playdemo.php?filename=playcss_justify */-->
@@ -18,21 +19,29 @@
     </p>
       
       <p id = "time"
-        style="margin-right: 16px; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
+        style="margin-right: 16px; backgrounemd-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
       Time
     </p>
     
     </div>
-  
-  <div class="firstWindow"  style= " position:absolute; padding:10px; width:fit-content ">
 
-    
+  <div id= "welcome"class="firstWindow"  style= " position:absolute; padding:10px; width:fit-content ">
+    <p id="welcomeheader">
+      Handle
+    </p>
     <!-- position absolute: window is relative to screen instead of other items -->
-    <img class="profile" src="https://cloud-5vor326f6-hack-club-bot.vercel.app/0image.png" alt="Profile Picture">
-    <img class = "linkedin" src=./linked.svg width = "32px"; height="32px">
-    <img class = "insta" src=./insta.svg width = "32px"; height="32px">
-    <img class = "github" src=./github.svg>
-  
+    <div class="iconRow">  
+      <img class="profile" src="https://cloud-5vor326f6-hack-club-bot.vercel.app/0image.png" alt="Profile Picture">
+      <a href = "https://www.linkedin.com/in/jeslynchang/"> 
+        <img class = "linkedin" src=./linked.svg width = "32px"; height="32px"></a>
+      <a href="mailto:jeslynchang80@gmail.com"> 
+        <img class="gmail" src="./gmail.svg" width="32px" height="32px"></a>
+      <a href="https://github.com/se1yu">
+        <img class = "github" src=./github.svg></a>
+      <a href="https://www.instagram.com/se1yu/">
+        <img class = "insta" src=./insta.svg width = "32px"; height="32px"></a>
+    </div>
+    
     <div class="desc"> <!-- div is what i can put around a section: class in first div to name it -->
       <p class="head" style="padding-left: 0;">jeslynOS</p>
       <p> Answering the one question you have...</p>

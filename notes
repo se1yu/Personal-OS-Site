@@ -1,8 +1,15 @@
+current errors: script js first line cant read ID. have to fiure out where handle goes, and what is suppsoed to be labeled id = window
+
 add app icons next to profile pic with links to socials/other platforms (b4 draggable)
 make first window (profile window) smaller
 sync time and date to desktop for true values
 change font at top to be more legible
 change fonts for desc
+when hovering icons, have a name there to represent what it is: change cursor too to click
+custom cursor maybe 
+space out the icons to be responsive?
+
+
 
 icon credits 
 <a target="_blank" href="https://icons8.com/icon/60ZV_wYC0BM2/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
