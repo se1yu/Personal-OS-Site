@@ -1,5 +1,5 @@
 // Make the DIV element draggable:
-dragElement(document.getElementById("window"));
+dragElement(document.getElementById("welcome"));
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
@@ -22,7 +22,7 @@ function dragElement(element) {
 
   // Step 6: Define the `startDragging` function to capture the initial mouse position and set up event listeners.
   function startDragging(e) {
-    e = e || window.event;
+    e = e || welcome.event;
     e.preventDefault();
     // Step 7: Get the mouse cursor position at startup.
     initialX = e.clientX;
@@ -34,7 +34,7 @@ function dragElement(element) {
 
   // Step 9: Define the `elementDrag` function to calculate the new position of the element based on mouse movement.
   function dragElement(e) {
-    e = e || window.event;
+    e = e || welcome.event;
     e.preventDefault();
     // Step 10: Calculate the new cursor position.
     currentX = initialX - e.clientX;
