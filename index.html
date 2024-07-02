@@ -6,11 +6,29 @@
 </head>
 
 <body class="bg">
-<div  style="border:  solid 10px #6178bd;  border-radius: 16px; height: 50vh; position: absolute; width: 50%;">
-  <div id="welcome"
-    style="display: flex; flex-direction: column; position: absolute; top: calc(50% - 90px); left: calc(50% - 180px); backdrop-filter: blur(4px); background-color: rgba(0, 0, 0, 0.125);  ">
+  <div class="topBar"
+    style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.2); color: #fff; justify-content: space-evenly; gap: 32px; top:0; left: 0;"> 
+    <!--/* https://www.w3schools.com/cssref/playdemo.php?filename=playcss_justify */-->
+  <p style="margin-left: 16px; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px; cursor:pointer;" id="welcomeopen">
+    @ se1yu
+  </p>
 
+  <p style="margin-left: 16px; background-color: rgba(256, 256, 256, 0.25); padding: 4px 12px; border-radius: 16px;">
+    🌱 meow 🐈
+  </p>
+
+  <p id = "time" style="margin-right: 16px; backgrounemd-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
+    Time
+  </p>
+
+  </div>
+<div id="welcome" style="border:  solid 10px #6178bd;  border-radius: 16px; height: 25vh; position: absolute; width: 20vw; translate (50%, 50%); top: 30%; left:35%;">
   
+  <div
+    style="display: flex; flex-direction: column; position: absolute; top: calc(50% - 90px); left: calc(50% - 180px); backdrop-filter: blur(4px); background-color: rgba(0, 0, 0, 0.125) ; border-radius: 16px;  ">
+
+    <p style="cursor: pointer" id="welcomeclose";>Close</p>
+    
     <div id="welcomeheader"
       style="width: 100%; display: flex; align-items: center; cursor: move; justify-content: center; margin-top: 8px;">
       <p style="margin: 0px; color: #fff; font-weight: 500">Welcome</p>
@@ -30,6 +48,7 @@
 
       <div class="desc"> <!-- div is what i can put around a section: class in first div to name it -->
         <p class="head" style="padding-left: 0;">jeslynOS</p>
+        
         <p> Answering the one question you have...</p>
         <p> Who is <a href="https://www.google.com">Jeslyn</a>?</p>
       </div>
