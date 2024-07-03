@@ -59,10 +59,11 @@ function updateTime(){
   var timeText = document.querySelector("#time"); // # means its an id in the tag somewhere above
   timeText.innerHTML = theTime;
 }
-
 setInterval(updateTime, 1000); //every 1000ms (1s)
 
+
 var welcomeScreen = document.querySelector("#welcome");
+
 function closeWindow(element) {
   element.style.display = "none";
 }
