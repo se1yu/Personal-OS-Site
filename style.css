@@ -30,6 +30,38 @@ html {
   margin-left: 0px;
 }
 
+.welcomeHeader{
+  width: 100;
+  display: flex; 
+  align-items: center;
+  cursor: move;
+  margin-top: 8px;
+  justify-content: flex-end;
+  
+}
+ 
+.windowSize{
+  width: 16px;
+  margin-right: 6px;
+  height: 26px;
+}
+
+.headerText{
+  margin: 0px;
+  color: #fff;
+  font-weight: 500;
+  width:50%;
+  align-items: center;
+}
+.closeButton{
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background-color: #C5726E;
+  border-radius: 16px;
+  justify-content: flex-end;
+}
+
 .firstWindow{
   top: 50%;
   left: 50%;
