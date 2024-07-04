@@ -22,19 +22,33 @@
     Time
   </p>
   </div>
-
+  
   <div id="desktopApps" style= "padding-top: 64px; padding-left: 16px;">
-    <div class="photoApp" style="text-align: center; width: fit-content; padding:16px; filter: drop-shadow(0 0 4px black);"> <!--wth does fit content do..-->
+    <div class="photoApp" id= "photoApp" style="text-align: center; width: fit-content; padding:16px; filter: drop-shadow(0 0 4px black);"> <!--wth does fit content do..-->
+      
       <img src="https://cloud-e1qpmag8j-hack-club-bot.vercel.app/0img_2104.jpg" style = "width:64px; height:64px; border-radius: 16px;">
       <p style="margin: 0px; color: white; font-size: 12px;">Photo Gallery</p>
     </div>
+    <div class="window" id="photos" style="top: calc(50% - 240px); left: calc(50% - 260px); position:absolute">  <!--position absolute needed to make it draggable-->
+      <div class="transparentBg">
+        <div class="welcomeHeader" id="notesHeader" style="display: flex; align-items: center;">
+          <p class="headerText">Photo Gallery</p>
+          <div class="closeButton" id="notesClose"></div>
+          
+          <div style="width: 16px; margin-right: 6px; height: 16px;"></div>
+        </div>
+      
+        <div style="background-color: #fff; margin: 6px; border-radius: 12px; width: 520px; height: 480px; padding: 16px;">
+          <p>Gallery</p>
+        </div>
+      </div>
+    </div>
   </div>
   
+
   <div id="welcome" style="border:  solid 10px #6178bd;  border-radius: 16px; height: 25vh; position: absolute; width: 20vw; translate (50%, 50%); top: 30%; left:35%;">
     
-    <div
-      style="display: flex; flex-direction: column; position: absolute; top: calc(50% - 90px); left: calc(50% - 180px); backdrop-filter: blur(4px); background-color: rgba(0, 0, 0, 0.125) ; border-radius: 16px;  "> <!-- transparent bg -->
-      
+    <div class="transparentBg">
       <div class= "welcomeHeader" id="welcomeheader"> <!--class = "" can be used on any element, not js div-->
         <p class= "headerText">Welcome</p>
         <div class= "closeButton" id="welcomeclose"></div> <!-- red button bg -->
