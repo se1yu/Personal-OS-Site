@@ -1,7 +1,32 @@
-// Make the DIV element draggable:
+function updateTime(){
+  //javascript (logic: user events, or updating time)
+  var theTime = new Date().toLocaleString(); //gets current date and turns into string
+  var timeText = document.querySelector("#time"); // # means its an id in the tag somewhere above
+  timeText.innerHTML = theTime;
+}
+setInterval(updateTime, 1000); //every 1000ms (1s)
+
+function addWindowTapHandling(element) {
+  element.addEventListener("mousedown", () =>
+    handleWindowTap(element)
+  )
+}
+//i think this function to initalize window does.. work?
+function initializeWindow(elementId){
+  var screen = document.querySelector("#" + elementId)
+  addWindowTapHandling(screen)
+  closeWindow(screen)
+  dragElement(screen)
+}
+
+initializeWindow("photos")
+
+// Make the DIV element draggable + "in-front-able"
 dragElement(document.getElementById("welcome"));
 dragElement(document.getElementById("photos"));
 dragElement(document.querySelector("#photos"))
+addWindowTapHandling(document.getElementById("welcome"));
+addWindowTapHandling(document.getElementById("photos"));
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
   // Step 2: Set up variables to keep track of the element's position.
@@ -54,23 +79,49 @@ function dragElement(element) {
   }
 }
 
-function updateTime(){
-  //javascript (logic: user events, or updating time)
-  var theTime = new Date().toLocaleString(); //gets current date and turns into string
-  var timeText = document.querySelector("#time"); // # means its an id in the tag somewhere above
-  timeText.innerHTML = theTime;
-}
-setInterval(updateTime, 1000); //every 1000ms (1s)
 
+
+/*
+function openWindow(element) {
+  element.style.display = "flex";
+  biggestIndex++;
+  element.style.zIndex = biggestIndex;
+}
+
+// Existing Functionality
+function deselectIcon(element) {
+  if (element) {
+    element.classList.remove("photoApp");
+  }
+  selectedIcon = undefined;
+}
+
+*/
 
 var welcomeScreen = document.querySelector("#welcome");
+var topBar = document.querySelector("#topBar");
 
 function closeWindow(element) {
   element.style.display = "none";
 }
 function openWindow(element) {
   element.style.display = "flex";
+  biggestIndex++;
+  element.style.zIndex = biggestIndex;
+  topBar.style.zIndex = biggestIndex+1;
 }
+
+function handleWindowTap(element) {
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+  topBar.style.zIndex = biggestIndex+1;
+}
+//z index placing windows in front 
+var biggestIndex = 1; // Initialize the biggest z-index value
+
+
+
+
 //  close welcome window
 var welcomeScreenClose = document.querySelector("#welcomeclose");
 var welcomeScreenOpen = document.querySelector("#welcomeopen");
@@ -116,23 +167,4 @@ photoScreenOpen.addEventListener("click", function() {
 });
 
 
-/*
-//z index placing windows in front 
-var biggestIndex = 1; // for now bc only 2 windows
-function addWindowTapHandling(element){
-  element.addEventListner("mousedown", function(){ // or ,() =>
-    handleWindowTap(element)
-  }
-}
 
-function handleWindowTap(element){
-  biggestIndex++;
-  element.style.zIndex = biggestIndex; // changing the z index of the element to be the largest to go ontop of smaller zindex of last window clicked
-}
-
-function openWindow(element){
-  element.style.display = "flex";
-  biggestIndex++;
-  element.style.zIndex = biggestIndex;
-}
-*/ 
