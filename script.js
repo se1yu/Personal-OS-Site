@@ -71,6 +71,7 @@ function closeWindow(element) {
 function openWindow(element) {
   element.style.display = "flex";
 }
+//  close welcome window
 var welcomeScreenClose = document.querySelector("#welcomeclose");
 var welcomeScreenOpen = document.querySelector("#welcomeopen");
 welcomeScreenClose.addEventListener("click", function() {
@@ -102,4 +103,36 @@ function handleIconTap(element){
   }
   
 }
+// close photo app 
 
+var photoScreen = document.querySelector("#photos");
+var photoScreenClose = document.querySelector("#photoClose");
+var photoScreenOpen = document.querySelector("#photoOpen");
+photoScreenClose.addEventListener("click", function() {
+    closeWindow(photoScreen);
+});
+photoScreenOpen.addEventListener("click", function() {
+    openWindow(photoScreen);
+});
+
+
+/*
+//z index placing windows in front 
+var biggestIndex = 1; // for now bc only 2 windows
+function addWindowTapHandling(element){
+  element.addEventListner("mousedown", function(){ // or ,() =>
+    handleWindowTap(element)
+  }
+}
+
+function handleWindowTap(element){
+  biggestIndex++;
+  element.style.zIndex = biggestIndex; // changing the z index of the element to be the largest to go ontop of smaller zindex of last window clicked
+}
+
+function openWindow(element){
+  element.style.display = "flex";
+  biggestIndex++;
+  element.style.zIndex = biggestIndex;
+}
+*/ 

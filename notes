@@ -1,8 +1,6 @@
-current errors: script js first line cant read ID. have to fiure out where handle goes, and what is suppsoed to be labeled id = window
-
 add app icons next to profile pic with links to socials/other platforms (b4 draggable)
-make first window (profile window) smaller
-sync time and date to desktop for true values
+add a currently listening to spotify thing
+sync time and date to desktop for true values (is it suppposed to be delayed when I first start it up? by like 1000ms..)
 change font at top to be more legible
 change fonts for desc
 when hovering icons, have a name there to represent what it is: change cursor too to click
@@ -19,3 +17,8 @@ icons 2use: github, linkedin, instagram,
 
 
 sike is the best mentor ever! <3
+
+
+issues:
+  Now i got to make it so gallery isnt draggable by the white window, only header one
+  make all ids and var naming camelcase consistent

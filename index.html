@@ -25,15 +25,16 @@
   
   <div id="desktopApps" style= "padding-top: 64px; padding-left: 16px;">
     <div class="photoApp" id= "photoApp" style="text-align: center; width: fit-content; padding:16px; filter: drop-shadow(0 0 4px black);"> <!--wth does fit content do..-->
-      
-      <img src="https://cloud-e1qpmag8j-hack-club-bot.vercel.app/0img_2104.jpg" style = "width:64px; height:64px; border-radius: 16px;">
-      <p style="margin: 0px; color: white; font-size: 12px;">Photo Gallery</p>
+      <div id="photoOpen" class="photoOpen">
+        <img src="https://cloud-e1qpmag8j-hack-club-bot.vercel.app/0img_2104.jpg" style = "width:64px; height:64px; border-radius: 16px;">
+        <p  style="margin: 0px; color: white; font-size: 12px; ">Photo Gallery</p>
+      </div>
     </div>
-    <div class="window" id="photos" style="top: calc(50% - 240px); left: calc(50% - 260px); position:absolute">  <!--position absolute needed to make it draggable-->
+    <div class="window" id="photos" style="top: calc(50% - 240px); left: calc(50% - 260px); position:absolute; display: none;">  <!--position absolute needed to make it draggable-->
       <div class="transparentBg">
-        <div class="welcomeHeader" id="notesHeader" style="display: flex; align-items: center;">
+        <div class="welcomeHeader" id="photosheader" style="display: flex; align-items: center;">
           <p class="headerText">Photo Gallery</p>
-          <div class="closeButton" id="notesClose"></div>
+          <div class="closeButton" id="photoClose"></div>
           
           <div style="width: 16px; margin-right: 6px; height: 16px;"></div>
         </div>
