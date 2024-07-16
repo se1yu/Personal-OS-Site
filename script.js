@@ -168,43 +168,75 @@ photoScreenOpen.addEventListener("click", function() {
 
 
 
-var content = [
 
-  {
-    title: "Welcome",
-    date: "06/28/2023",
-    content: `
-     <h1 style=" font-size: 20px; ">Welcome to my Art Gallery!</h1>
-    <p>Hello! Welcome to my art gallery! I have a couple categories on the left here that you can navigate to. </p>
-     <p>Art has always been a fun creative outlet for me! I love experimenting with design and photography and digital pieces. Every piece that I complete always has a satisfactory feeling to it. By the way, I took this background photo from my hotel window in Kuala Lumpur in Malaysia! testtttttttttttttttttttttttttttt tttttttttttttttttttttttt tttttttttttttttttttttttttttttttttttttttttttt ttttttttttttt tttttttttttttttttttttttttttttttttttttttttttt tttttttttttttttttttttttttttttttttttttttttttt v </p>`
+
+document.addEventListener("DOMContentLoaded", function () {
+  var content = [
+    {
+      title: "Welcome",
+      //date: "06/28/2023",
+      content: `
+       <h1 style=" font-size: 20px; ">Welcome to my Art Gallery!</h1>
+      <p>Hello! Welcome to my art gallery! I have a couple categories on the left here that you can navigate to. </p>
+       <p>Art has always been a fun creative outlet for me! I love experimenting with design and photography and digital pieces. Every piece that I complete always has a satisfactory feeling to it. By the way, I took this background photo from my hotel window in Kuala Lumpur in Malaysia! testtttttttttttttttttttttttttttt tttttttttttttttttttttttt tttttttttttttttttttttttttttttttttttttttttttt ttttttttttttt tttttttttttttttttttttttttttttttttttttttttttt tttttttttttttttttttttttttttttttttttttttttttt v tttttttttttttttttttttttttttttttttttttttttttt
+       tttttttttttttttttttttttttttttttttttttttttttt
+       tttttttttttttttttttttttttttttttttttttttttttt
+       tttttttttttttttttttttttttttttttttttttttttttt
+       tttttttttttttttttttttttttttttttttttttttttttt
+       tttttttttttttttttttttttttttttttttttttttttttt
+       tttttttttttttttttttttttttttttttttttttttttttt
+       tttttttttttttttttttttttttttttttttttttttttttt
+       tttttttttttttttttttttttttttttttttttttttttttt</p>`
+    },
+    { //content works... add a pointer cursor and maybe a gap? 
+      title: "Digital Art",
+      
+      content: ` <p> Testing</p>`
+    },
+    { 
+      title: "Traditional Art",
+
+      content: ` <p> Testing</p>`
+    },
+    {
+      title: "Graphic Designs",
+      
+      content: ` <p> Testing</p>`
+    },
+    
+    
+  ]
+
+
+  function setArtGalleryContent(index){
+    var homeContent = document.querySelector("#homeContent");
+    homeContent.innerHTML = content[index].content;
+    homeContent.style.display='block';
   }
-]
+  setArtGalleryContent(0)
 
-function setArtGalleryContent(index){
-  var homeContent = document.querySelector("#homeContent")
-  homeContent.innerHTML = content[index].content
-}
-setArtGalleryContent(0)
+  function addToNav(index) { //display on the side bar
+    
+    var nav = document.querySelector("#nav"); //sidebar is the navigation
+    var note = content[index];
+    var newDiv = document.createElement("div");
 
-function addToNav(index) { 
-  var nav = document.querySelector("#nav"); //sidebar is the navigation
-  var note = content[index];
-  var newDiv = document.createElement("div");
-  newDiv.innerHTML = `
-  <p style= "margin: 0px;" >
-    ${note.title}
-  </p>
-  <p style= "font-size: 16px; margin:0px;">
-    ${note.date}
-  </p>
-  `;
-  
-  newDiv.addEventListener("click",function() {
-    setArtGalleryContent(index);
-  });
-  
-  nav.appendChild(newDiv);
-}
-for (let i = 0; i<content.length; i++){
-  addToNav(i)
-}
+    //diff bg colors
+    var backgroundColors = ["#f2f2f2", "#e6f7ff", "#ffe6e6", "#e6ffe6"];
+    var bgColor = backgroundColors[index % backgroundColors.length];
+    newDiv.innerHTML = `
+        <div style="background-color: ${bgColor}; padding: 10px; margin-bottom: 10px; cursor: pointer; border-radius: 5px;">
+          <p style="margin: 0; text-decoration: underline;">${note.title}</p>
+        </div>
+      `;
+
+    newDiv.addEventListener("click",function() {
+      setArtGalleryContent(index);
+    });
+
+    nav.appendChild(newDiv);
+  }
+  for (let i = 0; i<content.length; i++){
+    addToNav(i)
+  }
+});

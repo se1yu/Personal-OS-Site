@@ -39,16 +39,14 @@
           <div style="width: 16px; margin-right: 6px; height: 16px;"></div>
         </div>
       
-        <div id="whiteBgContainer" style="background-color: #fff; margin: 6px; border-radius: 12px; width: 400px; height: 480px; padding: 16px;padding-top:5px;">
+        <div id="whiteBgContainer" style="background-color: #fff; margin: 6px; border-radius: 12px; width: 600px; height: 480px; padding: 16px;padding-top:5px;">
           <!--testing formatting ideas-->
           
           
-          <div id="nav">
-            
-          </div>
+          <div id="nav"></div>
           
            <!--put grid gallery of projects and a bar on the right to switch from projects such as art, photos, etc-->
-          <div id="homeContent" style=" display: inline-block;">
+          <div id="homeContent">
           
           </div>
       </div>
@@ -56,7 +54,7 @@
   </div>
   
 <!--weird border outline thing here-->
-  <div id="welcome" style="border:  solid 10px #6178bd;  border-radius: 16px; height: 25vh; position: absolute; width: 50vw; padding-bottom: 20px; translate (50%, 50%); top: 30%; left:35%;">
+  <div id="welcome" style="border:  solid 10px #6178bd;  border-radius: 16px; height: 25vh; position: absolute; width: 30vw; padding-bottom: 20px; translate (50%, 50%); top: 30%; left:35%;">
     
     <div class="transparentBg">
       <div class= "welcomeHeader" id="welcomeheader"> <!--class = "" can be used on any element, not js div-->
@@ -69,13 +67,13 @@
         <div class="iconRow">
           <img class="profile" src="https://cloud-5vor326f6-hack-club-bot.vercel.app/0image.png" alt="Profile Picture">
           <a href="https://www.linkedin.com/in/jeslynchang/">
-            <img class="linkedin" src=./linked.svg width="32px" ; height="32px"></a>
+            <img class="linkedin" src=assets/linked.svg width="32px" ; height="32px"></a>
           <a href="mailto:jeslynchang80@gmail.com">
-            <img class="gmail" src="./gmail.svg" width="32px" height="32px"></a>
+            <img class="gmail" src="assets/gmail.svg" width="32px" height="32px"></a>
           <a href="https://github.com/se1yu">
-            <img class="github" src=./github.svg></a>
+            <img class="github" src=assets/github.svg></a>
           <a href="https://www.instagram.com/se1yu/">
-            <img class="insta" src=./insta.svg width="32px" ; height="32px"></a>
+            <img class="insta" src=assets/insta.svg width="32px" ; height="32px"></a>
         </div>
 
       <div class="desc"> <!-- div is what i can put around a section: class in first div to name it -->
@@ -87,9 +85,20 @@
     </div>
 
   </div>
-  
-    <!-- <script src="script.js"> </script>-->
-    
+    </div>
+    <script> 
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById('welcomeBtn').addEventListener('click', function () {
+          var homeContent = document.getElementById('homeContent');
+          if (homeContent.style.display === 'none' || homeContent.style.display === '') {
+            homeContent.style.display = 'block';
+          } else {
+            homeContent.style.display = 'none';
+          }
+        });
+      });
+</script>
+
 
 </body>
 
