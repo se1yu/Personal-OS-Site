@@ -19,14 +19,14 @@ function initializeWindow(elementId){
   dragElement(screen)
 }
 
-initializeWindow("photos")
+initializeWindow("arts")
 
 // Make the DIV element draggable + "in-front-able"
 dragElement(document.getElementById("welcome"));
-dragElement(document.getElementById("photos"));
-dragElement(document.querySelector("#photos"))
+dragElement(document.getElementById("arts"));
+dragElement(document.querySelector("#arts"))
 addWindowTapHandling(document.getElementById("welcome"));
-addWindowTapHandling(document.getElementById("photos"));
+addWindowTapHandling(document.getElementById("arts"));
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
   // Step 2: Set up variables to keep track of the element's position.
@@ -136,12 +136,12 @@ welcomeScreenOpen.addEventListener("click", function() {
 var selectedIcon = undefined
 
 function selectIcon(element){
-  element.classList.add("photoApp");
+  element.classList.add("artApp");
   selectedIcon = element;
 }
 
 function deselectIcon(element){
-  element.classList.remove("photoApp");
+  element.classList.remove("artApp");
   selectedIcon=undefined;
 }
 
@@ -156,19 +156,19 @@ function handleIconTap(element){
 }
 // close photo app 
 
-var photoScreen = document.querySelector("#photos");
-var photoScreenClose = document.querySelector("#photoClose");
-var photoScreenOpen = document.querySelector("#photoOpen");
-photoScreenClose.addEventListener("click", function() {
-    closeWindow(photoScreen);
+var artScreen = document.querySelector("#arts");
+var artScreenClose = document.querySelector("#artClose");
+var artScreenOpen = document.querySelector("#artOpen");
+artScreenClose.addEventListener("click", function() {
+    closeWindow(artScreen);
 });
-photoScreenOpen.addEventListener("click", function() {
-    openWindow(photoScreen);
+artScreenOpen.addEventListener("click", function() {
+    openWindow(artScreen);
 });
 
 
 
-
+//By the way, I took this background photo from my hotel window in Kuala Lumpur in Malaysia!
 
 document.addEventListener("DOMContentLoaded", function () {
   var content = [
@@ -177,31 +177,39 @@ document.addEventListener("DOMContentLoaded", function () {
       //date: "06/28/2023",
       content: `
        <h1 style=" font-size: 20px; ">Welcome to my Art Gallery!</h1>
-      <p>Hello! Welcome to my art gallery! I have a couple categories on the left here that you can navigate to. </p>
-       <p>Art has always been a fun creative outlet for me! I love experimenting with design and photography and digital pieces. Every piece that I complete always has a satisfactory feeling to it. By the way, I took this background photo from my hotel window in Kuala Lumpur in Malaysia! testtttttttttttttttttttttttttttt tttttttttttttttttttttttt tttttttttttttttttttttttttttttttttttttttttttt ttttttttttttt tttttttttttttttttttttttttttttttttttttttttttt tttttttttttttttttttttttttttttttttttttttttttt v tttttttttttttttttttttttttttttttttttttttttttt
-       tttttttttttttttttttttttttttttttttttttttttttt
-       tttttttttttttttttttttttttttttttttttttttttttt
-       tttttttttttttttttttttttttttttttttttttttttttt
-       tttttttttttttttttttttttttttttttttttttttttttt
-       tttttttttttttttttttttttttttttttttttttttttttt
-       tttttttttttttttttttttttttttttttttttttttttttt
-       tttttttttttttttttttttttttttttttttttttttttttt
-       tttttttttttttttttttttttttttttttttttttttttttt</p>`
+      <p>Hello! Welcome to my art gallery! I have a couple categories on the left here that you can navigate to. Or you can read my enlightment and origin below!</p>
+       <p>
+         Art has always been a fun creative outlet for me! I love experimenting with design, mediums, and digital pieces. Every piece that I complete always has a satisfactory feeling to it. I've been interested in art since I was 9 years old. Since then, I look to always expand my humanistic side of me.
+         Art makes me feel like the low tide on a beach against this rise of crashing waves in technology.
+      </p>
+      <p> 
+      Currently, in my senior year of high school, I will do something I have never done before. Take art classes in high school. I discovered that life is full of arts. Even though I do not wish a career in art, I will dedicate my last years in high school towards my creative outlet with Ceramics and AP Art Portfolio :)
+      </p>
+       <p> But before you look into my current work.. I would like to show it's foundation. </p>
+        <h5> Thats right, I began as a small inspired <a href ="https://lunime.itch.io/gacha-life">Gacha</a> Artist </h5>
+       <image src="https://cloud-g4j8a1q4m-hack-club-bot.vercel.app/0image.png" style="width:400px; border-radius: 16px;"> 
+       `
     },
     { //content works... add a pointer cursor and maybe a gap? 
       title: "Digital Art",
       
-      content: ` <p> Testing</p>`
+      content: `
+      <h1 style=" font-size: 20px; ">The labriynth of Digital Pieces...</h1>
+      <p> Testing</p>`
     },
     { 
       title: "Traditional Art",
 
-      content: ` <p> Testing</p>`
+      content: ` 
+      <h1 style=" font-size: 20px; ">The Random Traditional Pieces</h
+      <p> Testing</p>`
     },
     {
       title: "Graphic Designs",
       
-      content: ` <p> Testing</p>`
+      content: ` 
+      <h1 style=" font-size: 20px; ">From Logos to Shirt Design!</h
+      <p> Testing</p>`
     },
     
     

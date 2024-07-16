@@ -19,23 +19,25 @@
   </p>
 
   <p id = "time" style="margin-right: 16px; backgrounemd-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
-    Time
+    0:00
   </p>
   </div>
   
   <div id="desktopApps" style= "padding-top: 64px; padding-left: 16px;">
-    <div class="photoApp" id= "photoApp" style="text-align: center; width: fit-content; padding:16px; filter: drop-shadow(0 0 4px black);"> <!--wth does fit content do..-->
-      <div id="photoOpen" class="photoOpen">
+    <div class="artApp" id= "artApp" style="text-align: center; width: fit-content; padding:16px; filter: drop-shadow(0 0 4px black);"> <!--wth does fit content do..-->
+      <div id="artOpen" class="artOpen">
         <img src="https://cloud-e1qpmag8j-hack-club-bot.vercel.app/0img_2104.jpg" style = "width:64px; height:64px; border-radius: 16px;">
         <p  style="margin: 0px; color: white; font-size: 12px; ">Art Gallery</p>
-        
+        <!-- need to add other apps.. one for spotify, one for photography and learn the montary grid system? make a journal one..... thats all for now-->
       </div>
     </div>
-    <div class="window" id="photos" style="top: calc(50% - 240px); left: calc(50% - 260px); position:absolute; display: none;">  <!--position absolute needed to make it draggable-->
+    
+    
+    <div class="window" id="arts" style="top: calc(50% - 240px); left: calc(50% - 260px); position:absolute; display: none; width: 30vw; padding-bottom: 20px; translate (50%, 50%); top: 30%; left:35%;"">  <!--position absolute needed to make it draggable-->
       <div class="transparentBg">
-        <div class="welcomeHeader" id="photosheader" style="display: flex; align-items: center;">
+        <div class="welcomeHeader" id="artsheader" style="display: flex; align-items: center;">
           <p class="headerText">Art Gallery</p>
-          <div class="closeButton" id="photoClose"></div>
+          <div class="closeButton" id="artClose"></div>
           <div style="width: 16px; margin-right: 6px; height: 16px;"></div>
         </div>
       
@@ -53,9 +55,8 @@
     </div>
   </div>
   
-<!--weird border outline thing here-->
-  <div id="welcome" style="border:  solid 10px #6178bd;  border-radius: 16px; height: 25vh; position: absolute; width: 30vw; padding-bottom: 20px; translate (50%, 50%); top: 30%; left:35%;">
-    
+<!--weird border outline thing here. top and left are positions.-->
+  <div id="welcome">
     <div class="transparentBg">
       <div class= "welcomeHeader" id="welcomeheader"> <!--class = "" can be used on any element, not js div-->
         <p class= "headerText">Welcome</p>
