@@ -20,13 +20,18 @@ function initializeWindow(elementId){
 }
 
 initializeWindow("arts")
-
+//initializeWindow("photos")
 // Make the DIV element draggable + "in-front-able"
 dragElement(document.getElementById("welcome"));
 dragElement(document.getElementById("arts"));
+//dragElement(document.getElementById("photos"));
+
 dragElement(document.querySelector("#arts"))
+//dragElement(document.querySelector("#photos"))
+
 addWindowTapHandling(document.getElementById("welcome"));
 addWindowTapHandling(document.getElementById("arts"));
+//addWindowTapHandling(document.getElementById("photos"));
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
   // Step 2: Set up variables to keep track of the element's position.
@@ -133,7 +138,7 @@ welcomeScreenOpen.addEventListener("click", function() {
 });
 
 
-var selectedIcon = undefined
+var selectedIcon = undefined;
 
 function selectIcon(element){
   element.classList.add("artApp");
@@ -144,7 +149,17 @@ function deselectIcon(element){
   element.classList.remove("artApp");
   selectedIcon=undefined;
 }
+/*
+function selectIcon(element){
+  element.classList.add("photoApp");
+  selectedIcon = element;
+}
 
+function deselectIcon(element){
+  element.classList.remove("photoApp");
+  selectedIcon=undefined;
+}
+*/
 function handleIconTap(element){
   if (element.classList.contains("selected")){
     deselectIcon(element);
@@ -154,6 +169,8 @@ function handleIconTap(element){
   }
   
 }
+
+
 // close photo app 
 
 var artScreen = document.querySelector("#arts");
@@ -166,8 +183,17 @@ artScreenOpen.addEventListener("click", function() {
     openWindow(artScreen);
 });
 
-
-
+/*
+var photoScreen = document.querySelector("#photos");
+var photoScreenClose = document.querySelector("#photosClose");
+var photoScreenOpen = document.querySelector("#photosOpen");
+photoScreenClose.addEventListener("click", function() {
+    closeWindow(photoScreen);
+});
+photoScreenOpen.addEventListener("click", function() {
+    openWindow(photoScreen);
+});
+*/
 //By the way, I took this background photo from my hotel window in Kuala Lumpur in Malaysia!
 
 document.addEventListener("DOMContentLoaded", function () {

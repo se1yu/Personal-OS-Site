@@ -92,7 +92,9 @@ html {
 .artOpen{
   cursor: pointer;
 }
-
+.photoOpen{
+  cursor: pointer;
+}
 .firstWindow{
   top: 50%;
   left: 50%;
@@ -120,6 +122,10 @@ html {
   
 }
 #arts{
+  translate: 50% 50%;
+  left: 50%;
+}
+#photos{
   translate: 50% 50%;
   left: 50%;
 }
