@@ -23,55 +23,61 @@
   </p>
   </div>
   
-  <div id="desktopApps" style= "padding-top: 64px; padding-left: 16px; display: flex;">
-    <div class="artApp" id= "artApp" style="text-align: center; width: fit-content; padding:16px; filter: drop-shadow(0 0 4px black);"> <!--wth does fit content do..-->
+  <div id="appContainer" style= "padding-top: 64px; padding-left: 16px; display: flex;">
+
+    <!--Art App-->
+    <div class="artApp" id= "artApp" style="text-align: center; width: fit-content; padding:16px; filter: drop-shadow(0 0 4px black);"> 
       <div id="artOpen" class="artOpen">
-        <img src="https://cloud-e1qpmag8j-hack-club-bot.vercel.app/0img_2104.jpg" style = "width:64px; height:64px; border-radius: 16px;">
+        <img src="https://cloud-486e6npwe-hack-club-bot.vercel.app/0image.png" style = "width:64px; height:64px; border-radius: 16px;">
         <p  style="margin: 0px; color: white; font-size: 12px; ">Art Gallery</p>
-        <!-- need to add other apps.. one for spotify, one for photography and learn the montary grid system? make a journal one..... thats all for now-->
       </div>
     </div>
-    <!--
-    <div class="artApp" id= "photoApp" style="text-align: center; width: fit-content; padding:16px; filter: drop-shadow(0 0 4px black);"> 
+
+    <!-- Photography App -->
+    <div class="photoApp" id= "photoApp" style="text-align: center; width: fit-content; padding:16px; filter: drop-shadow(0 0 4px black);"> 
       <div id="photosOpen" class="photosOpen">
           <img src="https://cloud-e1qpmag8j-hack-club-bot.vercel.app/0img_2104.jpg" style = "width:64px; height:64px; border-radius: 16px;">
           <p  style="margin: 0px; color: white; font-size: 12px; ">Photography</p>
       </div>
-      </div>
+    </div>
+  </div>   
+   
 
-
-
-      <div class="window" id="photos" style="top: calc(50% - 240px); left: calc(50% - 260px); position:absolute; display: none; width: 30vw; padding-bottom: 20px; translate (50%, 50%); top: 30%; left:35%;"">
-        <div class="transparentBg">
-          <div class="welcomeHeader" id="photosheader" style="display: flex; align-items: center;">
-            <p class="headerText">Art Gallery</p>
-            <div class="closeButton" id="photosClose"></div>
-            <div style="width: 16px; margin-right: 6px; height: 16px;"></div>
-          </div>
-        </div>
--->
-    
-    <div class="window" id="arts" style="top: calc(50% - 240px); left: calc(50% - 260px); position:absolute; display: none; width: 30vw; padding-bottom: 20px; translate (50%, 50%); top: 30%; left:35%;"">  <!--position absolute needed to make it draggable-->
+<!-- Art gallery window -->
+  <div class="window" id="arts" style="top: calc(50% - 240px); left: calc(50% - 260px); position:absolute; display: none; width: 30vw; padding-bottom: 20px; translate (50%, 50%); top: 30%; left:35%;"">  <!--position absolute needed to make it draggable-->
       <div class="transparentBg">
-        <div class="welcomeHeader" id="artsheader" style="display: flex; align-items: center;">
+        <div class="welcomeHeader" id= "artsHeader" style="display: flex; align-items: center;">
           <p class="headerText">Art Gallery</p>
           <div class="closeButton" id="artClose"></div>
           <div style="width: 16px; margin-right: 6px; height: 16px;"></div>
         </div>
-      
         <div id="whiteBgContainer" style="background-color: #fff; margin: 6px; border-radius: 12px; width: 600px; height: 480px; padding: 16px;padding-top:5px;">
-          <!--testing formatting ideas-->
-          
-          
           <div id="nav"></div>
-          
-           <!--put grid gallery of projects and a bar on the right to switch from projects such as art, photos, etc-->
-          <div id="homeContent">
-          
+          <div id="homeContent"></div>
+        </div>
+      </div> 
+  </div> 
+
+  <!-- Photo app window -->
+  <div class="window" id="photos" style="top: calc(50% - 240px); left: calc(50% - 260px); position:absolute; display: none; width: 30vw; padding-bottom: 20px; translate (50%, 50%); top: 20%; left:15%;">
+    <div class="transparentBg">
+      <div class="welcomeHeader" id="photosHeader" style="display: flex; align-items: center;">
+        <p class="headerText">Photo Library</p>
+        <div class="closeButton" id="photosClose"></div>
+          <div style="width: 16px; margin-right: 6px; height: 16px;">
           </div>
+      </div>
+      <div id="whiteBgContainer" style="background-color: #fff; margin: 6px; border-radius: 12px; width: 600px; height: 480px; padding: 16px;padding-top:5px;">
+        <div id="nav"></div>
+        <div id="homeContent"></div>
       </div>
     </div>
   </div>
+
+
+        
+        
+ 
   
 <!--weird border outline thing here. top and left are positions.-->
   <div id="welcome">

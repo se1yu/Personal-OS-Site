@@ -57,6 +57,7 @@ html {
   width: 300px; 
   height: auto; 
   margin: 5px; 
+  border-radius: 16px;
 }
 .transparentBg{
   display: flex;

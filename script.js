@@ -20,17 +20,13 @@ function initializeWindow(elementId){
 }
 
 initializeWindow("arts")
-//initializeWindow("photos")
+initializeWindow("photos")
 // Make the DIV element draggable + "in-front-able"
 dragElement(document.getElementById("welcome"));
-dragElement(document.getElementById("arts"));
 //dragElement(document.getElementById("photos"));
-
-dragElement(document.querySelector("#arts"))
 //dragElement(document.querySelector("#photos"))
-
 addWindowTapHandling(document.getElementById("welcome"));
-addWindowTapHandling(document.getElementById("arts"));
+
 //addWindowTapHandling(document.getElementById("photos"));
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
@@ -136,8 +132,29 @@ welcomeScreenClose.addEventListener("click", function() {
 welcomeScreenOpen.addEventListener("click", function() {
   openWindow(welcomeScreen);
 });
-
-
+/*
+function initializeWindow(elementName) {
+  var screen = document.querySelector("#" + elementName)
+  addWindowTapHandling(screen)
+  closeWindow(elementName)
+  dragElement(screen)
+  if(elementName != "welcome") 
+    {
+    initializeIcon(elementName)  
+    }
+}
+initializeWindow("welcome")
+initializeWindow("art")
+initializeWindow("photos")
+function initializeIcon(elementId) {
+  var icon = document.querySelector("#" + elementId + "Open");
+  if (icon) {
+    icon.addEventListener("click", function() {
+      openWindow(document.querySelector("#" + elementId));
+    });
+  }
+}
+*/
 var selectedIcon = undefined;
 
 function selectIcon(element){
@@ -183,7 +200,7 @@ artScreenOpen.addEventListener("click", function() {
     openWindow(artScreen);
 });
 
-/*
+
 var photoScreen = document.querySelector("#photos");
 var photoScreenClose = document.querySelector("#photosClose");
 var photoScreenOpen = document.querySelector("#photosOpen");
@@ -193,7 +210,7 @@ photoScreenClose.addEventListener("click", function() {
 photoScreenOpen.addEventListener("click", function() {
     openWindow(photoScreen);
 });
-*/
+
 //By the way, I took this background photo from my hotel window in Kuala Lumpur in Malaysia!
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -230,7 +247,6 @@ document.addEventListener("DOMContentLoaded", function () {
         <img src="https://cloud-1h7xhplcy-hack-club-bot.vercel.app/3image.png">
         <img src="https://cloud-pq1gkoz9o-hack-club-bot.vercel.app/0image.png">
         <img src="https://cloud-uac0nrq1m-hack-club-bot.vercel.app/5image.png">
-        
       </div>
       
       
@@ -271,7 +287,6 @@ document.addEventListener("DOMContentLoaded", function () {
         <img src="https://cloud-uac0nrq1m-hack-club-bot.vercel.app/8image.png">
         <img src="https://cloud-uac0nrq1m-hack-club-bot.vercel.app/9image.png">
         <img src="https://cloud-57yy04ypm-hack-club-bot.vercel.app/0image.png">
-        <img src=" https://cloud-uac0nrq1m-hack-club-bot.vercel.app/0image.png">
         <img src="https://cloud-57yy04ypm-hack-club-bot.vercel.app/1image.png">
         <img src="https://cloud-57yy04ypm-hack-club-bot.vercel.app/2image.png">
         <img src="https://cloud-57yy04ypm-hack-club-bot.vercel.app/3image.png">
