@@ -195,21 +195,76 @@ document.addEventListener("DOMContentLoaded", function () {
       
       content: `
       <h1 style=" font-size: 20px; ">The labriynth of Digital Pieces...</h1>
-      <p> Testing</p>`
+      <p> Hi! Take a scroll through some of my digital works!</p>
+      <h3> Digital Paintings </h3>
+      <div class="artPhotos">
+        <img src="https://cloud-1h7xhplcy-hack-club-bot.vercel.app/0image.png">
+        <img src="https://cloud-uac0nrq1m-hack-club-bot.vercel.app/0image.png">
+        <img src="https://cloud-1h7xhplcy-hack-club-bot.vercel.app/2image.png">
+        <img src="https://cloud-1h7xhplcy-hack-club-bot.vercel.app/3image.png">
+        <img src="https://cloud-pq1gkoz9o-hack-club-bot.vercel.app/0image.png">
+        <img src="https://cloud-uac0nrq1m-hack-club-bot.vercel.app/5image.png">
+        
+      </div>
+      
+      
+      `
+      
     },
     { 
       title: "Traditional Art",
 
       content: ` 
-      <h1 style=" font-size: 20px; ">The Random Traditional Pieces</h
-      <p> Testing</p>`
+      <h1 style=" font-size: 20px; ">The Random Traditional Pieces</h1>
+      <div class="artPhotos">
+      <p>  </p>
+      <img src="https://cloud-1h7xhplcy-hack-club-bot.vercel.app/4image.png">
+        <img src="https://cloud-1h7xhplcy-hack-club-bot.vercel.app/5image.png">
+        <img src="https://cloud-1h7xhplcy-hack-club-bot.vercel.app/6image.png">
+        <img src="https://cloud-1h7xhplcy-hack-club-bot.vercel.app/7image.png">
+        <img src= "https://cloud-1h7xhplcy-hack-club-bot.vercel.app/8image.png">
+        <img src="https://cloud-uac0nrq1m-hack-club-bot.vercel.app/1image.png">
+        <img src="https://cloud-uac0nrq1m-hack-club-bot.vercel.app/2image.png">
+        <img src="https://cloud-uac0nrq1m-hack-club-bot.vercel.app/3image.png">
+        <img src="https://cloud-uac0nrq1m-hack-club-bot.vercel.app/4image.png"> 
+        
+       
+      </div>
+      `
+      
     },
     {
       title: "Graphic Designs",
       
       content: ` 
-      <h1 style=" font-size: 20px; ">From Logos to Shirt Design!</h
-      <p> Testing</p>`
+      <h1 style=" font-size: 20px; ">From Logos to Shirt Design!</h1>
+      <p>  </p>
+      <div class="artPhotos">
+        <img src="https://cloud-uac0nrq1m-hack-club-bot.vercel.app/6image.png">
+        <img src="https://cloud-uac0nrq1m-hack-club-bot.vercel.app/7image.png">
+        <img src="https://cloud-uac0nrq1m-hack-club-bot.vercel.app/8image.png">
+        <img src="https://cloud-uac0nrq1m-hack-club-bot.vercel.app/9image.png">
+        <img src="https://cloud-57yy04ypm-hack-club-bot.vercel.app/0image.png">
+        <img src=" https://cloud-uac0nrq1m-hack-club-bot.vercel.app/0image.png">
+        <img src="https://cloud-57yy04ypm-hack-club-bot.vercel.app/1image.png">
+        <img src="https://cloud-57yy04ypm-hack-club-bot.vercel.app/2image.png">
+        <img src="https://cloud-57yy04ypm-hack-club-bot.vercel.app/3image.png">
+        <img src="https://cloud-57yy04ypm-hack-club-bot.vercel.app/4image.png">
+        <img src="https://cloud-57yy04ypm-hack-club-bot.vercel.app/5image.png">
+        <img src="https://cloud-57yy04ypm-hack-club-bot.vercel.app/6image.png">
+        <img src="https://cloud-57yy04ypm-hack-club-bot.vercel.app/7image.png">
+        <img src="https://cloud-57yy04ypm-hack-club-bot.vercel.app/8image.png">
+        <img src="https://cloud-57yy04ypm-hack-club-bot.vercel.app/9image.png">
+        <img src="https://cloud-67kw82iv3-hack-club-bot.vercel.app/6a4_-_1.png">
+         <img src="https://cloud-67kw82iv3-hack-club-bot.vercel.app/5a4_-_2.png">
+          <img src="https://cloud-67kw82iv3-hack-club-bot.vercel.app/4image.png">
+           <img src="https://cloud-67kw82iv3-hack-club-bot.vercel.app/0image.png">
+            <img src="https://cloud-67kw82iv3-hack-club-bot.vercel.app/1image.png">
+             <img src="https://cloud-67kw82iv3-hack-club-bot.vercel.app/2image.png">
+              <img src="https://cloud-67kw82iv3-hack-club-bot.vercel.app/3image.png">
+      
+      </div>
+      `
     },
     
     
