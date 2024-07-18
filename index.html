@@ -42,7 +42,18 @@
     </div>
   </div>   
    
+  <!-- Technical projects app-->
+    <div class="techApp" id= "techApp" style="text-align: center; width: fit-content; padding:16px; filter: drop-shadow(0 0 4px black);"> 
+        <div id="techOpen" class="techOpen" >
+            <img src="https://cloud-e1qpmag8j-hack-club-bot.vercel.app/0img_2104.jpg" style = "width:64px; height:64px; border-radius: 16px;">
+            <p style="margin: 0px; color: white; font-size: 12px;">Technical Projects</p>
+        </div>
+      </div>
+    </div>  
 
+
+
+    
 <!-- Art gallery window -->
   <div class="window" id="arts" style="top: calc(50% - 240px); left: calc(50% - 260px); position:absolute; display: none; width: 30vw; padding-bottom: 20px; translate (50%, 50%); top: 30%; left:35%;"">  <!--position absolute needed to make it draggable-->
       <div class="transparentBg">
@@ -75,9 +86,39 @@
   </div>
 
 
-        
-        
+  <!-- Tech app window -->
+   <div class="window" id="tech" style="top: calc(50% - 240px); left: calc(50% - 260px); position:absolute; display: none; width: 30vw; padding-bottom: 20px; translate (50%, 50%); top: 30%; left:35%;"">  <!--position absolute needed to make it draggable-->
+       <div class="transparentBg">
+         <div class="welcomeHeader" id= "techHeader" style="display: flex; align-items: center;">
+           <p class="headerText">Technical Projects</p>
+           <div class="closeButton" id="techClose"></div>
+           <div style="width: 16px; margin-right: 6px; height: 16px;"></div>
+         </div>
+         <div id="whiteBgContainer" style="background-color: #fff; margin: 6px; border-radius: 12px; width: 600px; height: 480px; padding: 16px;padding-top:5px;">
+           <div id="TechNav"></div>
+           <div id="TechHomeContent"></div>
+         </div>
+       </div> 
+   </div> 
  
+  <!-- ABOUT ME WINDOW -->
+  <div class="window" id="pfp" style="top: calc(50% - 240px); left: calc(50% - 260px); position:absolute; display: none; width: 30vw; padding-bottom: 20px; translate (50%, 50%); top: 30%; left:35%;"">  <!--position absolute needed to make it draggable-->
+       <div class="transparentBg">
+         <div class="welcomeHeader" id= "pfpHeader" style="display: flex; align-items: center;">
+           <p class="headerText">Technical Projects</p>
+           <div class="closeButton" id="pfpClose"></div>
+           <div style="width: 16px; margin-right: 6px; height: 16px;"></div>
+         </div>
+         <div id="whiteBgContainer" style="background-color: #fff; margin: 6px; border-radius: 12px; width: 600px; height: 480px; padding: 16px;padding-top:5px;">
+           <!--<div id="TechNav"></div> ;  might have a nav, idk-->
+           <div id="pfpHomeContent"></div>
+         </div>
+       </div> 
+   </div> 
+
+
+
+
   
 <!--weird border outline thing here. top and left are positions.-->
   <div id="welcome">
@@ -90,7 +131,7 @@
       
       <div style="background-color: #fff; margin: 6px; border-radius: 12px; width: 360px; padding: 16px;">
         <div class="iconRow">
-          <img class="profile" src="https://cloud-5vor326f6-hack-club-bot.vercel.app/0image.png" alt="Profile Picture">
+          <img class="profile" id="pfpApp" src="https://cloud-5vor326f6-hack-club-bot.vercel.app/0image.png" alt="Profile Picture">
           <a href="https://www.linkedin.com/in/jeslynchang/">
             <img class="linkedin" src=assets/linked.svg width="32px" ; height="32px"></a>
           <a href="mailto:jeslynchang80@gmail.com">

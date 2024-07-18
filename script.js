@@ -21,6 +21,8 @@ function initializeWindow(elementId){
 
 initializeWindow("arts")
 initializeWindow("photos")
+initializeWindow("tech")
+initializeWindow("pfp") //Bugged
 // Make the DIV element draggable + "in-front-able"
 dragElement(document.getElementById("welcome"));
 //dragElement(document.getElementById("photos"));
@@ -82,23 +84,6 @@ function dragElement(element) {
 
 
 
-/*
-function openWindow(element) {
-  element.style.display = "flex";
-  biggestIndex++;
-  element.style.zIndex = biggestIndex;
-}
-
-// Existing Functionality
-function deselectIcon(element) {
-  if (element) {
-    element.classList.remove("photoApp");
-  }
-  selectedIcon = undefined;
-}
-
-*/
-
 var welcomeScreen = document.querySelector("#welcome");
 var topBar = document.querySelector("#topBar");
 
@@ -132,29 +117,7 @@ welcomeScreenClose.addEventListener("click", function() {
 welcomeScreenOpen.addEventListener("click", function() {
   openWindow(welcomeScreen);
 });
-/*
-function initializeWindow(elementName) {
-  var screen = document.querySelector("#" + elementName)
-  addWindowTapHandling(screen)
-  closeWindow(elementName)
-  dragElement(screen)
-  if(elementName != "welcome") 
-    {
-    initializeIcon(elementName)  
-    }
-}
-initializeWindow("welcome")
-initializeWindow("art")
-initializeWindow("photos")
-function initializeIcon(elementId) {
-  var icon = document.querySelector("#" + elementId + "Open");
-  if (icon) {
-    icon.addEventListener("click", function() {
-      openWindow(document.querySelector("#" + elementId));
-    });
-  }
-}
-*/
+
 var selectedIcon = undefined;
 
 function selectIcon(element){
@@ -166,17 +129,7 @@ function deselectIcon(element){
   element.classList.remove("artApp");
   selectedIcon=undefined;
 }
-/*
-function selectIcon(element){
-  element.classList.add("photoApp");
-  selectedIcon = element;
-}
 
-function deselectIcon(element){
-  element.classList.remove("photoApp");
-  selectedIcon=undefined;
-}
-*/
 function handleIconTap(element){
   if (element.classList.contains("selected")){
     deselectIcon(element);
@@ -200,7 +153,7 @@ artScreenOpen.addEventListener("click", function() {
     openWindow(artScreen);
 });
 
-
+// Photo app functions
 var photoScreen = document.querySelector("#photos");
 var photoScreenClose = document.querySelector("#photosClose");
 var photoScreenOpen = document.querySelector("#photosOpen");
@@ -210,6 +163,31 @@ photoScreenClose.addEventListener("click", function() {
 photoScreenOpen.addEventListener("click", function() {
     openWindow(photoScreen);
 });
+
+// tech project app functions
+var techScreen = document.querySelector("#tech");
+var techScreenClose = document.querySelector("#techClose");
+var techScreenOpen = document.querySelector("#techOpen");
+techScreenClose.addEventListener("click", function() {
+    closeWindow(techScreen);
+});
+techScreenOpen.addEventListener("click", function() {
+    openWindow(techScreen);
+});
+
+
+/* profile pic app functions
+var pfpScreen = document.querySelector("#pfp");
+var pfpScreenClose = document.querySelector("#pfpClose");
+var pfpScreenOpen = document.querySelector("#pfpOpen");
+pfpScreenClose.addEventListener("click", function() {
+    closeWindow(pfpScreen);
+});
+pfpScreenOpen.addEventListener("click", function() {
+    openWindow(pfpScreen);
+});
+
+*/
 
 //By the way, I took this background photo from my hotel window in Kuala Lumpur in Malaysia!
 
@@ -319,13 +297,15 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   setArtGalleryContent(0)
 
-// this section breaks the code
+ 
+  // photo Content in app 
   var photoContent = [
     {
       title: "photos", 
       content:
       `
       <p> </p> 
+      
       <div class="photoPhotos">
         <div class="box">
           <img src="https://cloud-9l22uxapm-hack-club-bot.vercel.app/0image.png">
@@ -357,24 +337,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   ]
 
-
+  // set photo 
   function setPhotoGalleryContent(index){
     var photoHomeContent = document.querySelector("#photoHomeContent");
     photoHomeContent.innerHTML = photoContent[index].content;
     photoHomeContent.style.display='block';
   }
   setPhotoGalleryContent(0)
-    
-  
-  // this section breaks the code
-
-
-
-
-    
-    
   function addToNav(index) { //display on the side bar
-    
+
     var nav = document.querySelector("#nav"); //sidebar is the navigation
     var note = content[index];
     var newDiv = document.createElement("div");
@@ -397,9 +368,42 @@ document.addEventListener("DOMContentLoaded", function () {
   for (let i = 0; i<content.length; i++){
     addToNav(i)
   }
+  // Tech Projects content
+  var techContent = [
+    {
+      title: "tech", 
+      content:
+      `
+      <h1> header test </h1>
+      <p> testssssssssssss </p>
+      `
+    },
+    ]
+
+  function setTechGalleryContent(index){
+    var techHomeContent = document.querySelector("#techHomeContent");
+    techHomeContent.innerHTML = techContent[index].content;
+    techHomeContent.style.display='block';
+  }
+  setTechGalleryContent(0)
+
 
   
- 
+  /* pfp content
+  var pfpContent = [
+    {
+      title: "tech", 
+      content:
+      `
+      <p> test </p>
+      `
+    },
+    ]
 
-  
+  function setPfpGalleryContent(index){
+    var pfpHomeContent = document.querySelector("#pfpHomeContent");
+    pfpHomeContent.innerHTML = pfpContent[index].content;
+    pfpHomeContent.style.display='block';
+  }
+  setPfpGalleryContent(0) */
 });
