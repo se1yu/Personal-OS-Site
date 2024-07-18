@@ -319,6 +319,60 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   setArtGalleryContent(0)
 
+// this section breaks the code
+  var photoContent = [
+    {
+      title: "photos", 
+      content:
+      `
+      <p> </p> 
+      <div class="photoPhotos">
+        <div class="box">
+          <img src="https://cloud-9l22uxapm-hack-club-bot.vercel.app/0image.png">
+          <img src="https://cloud-9l22uxapm-hack-club-bot.vercel.app/1image.png">
+          <img src="https://cloud-9l22uxapm-hack-club-bot.vercel.app/2image.png">
+          <img src="https://cloud-9l22uxapm-hack-club-bot.vercel.app/3image.png">
+          <img src="https://cloud-9l22uxapm-hack-club-bot.vercel.app/4image.png">
+          <img src="https://cloud-9l22uxapm-hack-club-bot.vercel.app/5image.png">
+          <img src="https://cloud-9l22uxapm-hack-club-bot.vercel.app/6image.png">
+          <img src="https://cloud-9l22uxapm-hack-club-bot.vercel.app/7image.png">
+          <img src="https://cloud-9l22uxapm-hack-club-bot.vercel.app/8image.png">
+          <img src="https://cloud-9l22uxapm-hack-club-bot.vercel.app/9image.png">
+          <img src="https://cloud-e2jyb8csc-hack-club-bot.vercel.app/0image.png">
+          <img src="https://cloud-e2jyb8csc-hack-club-bot.vercel.app/1image.png">
+          <img src="https://cloud-e2jyb8csc-hack-club-bot.vercel.app/2image.png">
+          <img src="https://cloud-e2jyb8csc-hack-club-bot.vercel.app/3image.png">
+          <img src="https://cloud-e2jyb8csc-hack-club-bot.vercel.app/4image.png">
+          <img src="https://cloud-e2jyb8csc-hack-club-bot.vercel.app/5image.png">
+          <img src="https://cloud-e2jyb8csc-hack-club-bot.vercel.app/6image.png">
+          <img src="https://cloud-e2jyb8csc-hack-club-bot.vercel.app/7image.png">
+          <img src="https://cloud-e2jyb8csc-hack-club-bot.vercel.app/8image.png">
+          <img src="https://cloud-e2jyb8csc-hack-club-bot.vercel.app/9image.png">
+          <img src="https://cloud-5q2kaj56z-hack-club-bot.vercel.app/0image.png">
+          </div>
+      </div>
+      `
+    },
+
+
+  ]
+
+
+  function setPhotoGalleryContent(index){
+    var photoHomeContent = document.querySelector("#photoHomeContent");
+    photoHomeContent.innerHTML = photoContent[index].content;
+    photoHomeContent.style.display='block';
+  }
+  setPhotoGalleryContent(0)
+    
+  
+  // this section breaks the code
+
+
+
+
+    
+    
   function addToNav(index) { //display on the side bar
     
     var nav = document.querySelector("#nav"); //sidebar is the navigation
@@ -343,4 +397,9 @@ document.addEventListener("DOMContentLoaded", function () {
   for (let i = 0; i<content.length; i++){
     addToNav(i)
   }
+
+  
+ 
+
+  
 });

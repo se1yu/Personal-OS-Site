@@ -56,8 +56,25 @@ html {
 .artPhotos img { /* had to add the word img in there for it to work with Js idk..*/
   width: 300px; 
   height: auto; 
-  margin: 5px; 
+  margin: 0px auto; 
   border-radius: 16px;
+}
+
+.photoPhotos img{
+width: 300px;
+height: auto;
+margin: 5px;
+border-radius: 16px;
+justify-content: space-around;
+columns: 4;
+column-gap: 10px;
+}
+.box img{
+  width: 230px;
+  padding:20px;
+  object-fit: contain;
+  margin-bottom: 10px;
+
 }
 .transparentBg{
   display: flex;
@@ -93,7 +110,7 @@ html {
 .artOpen{
   cursor: pointer;
 }
-.photoOpen{
+.photosOpen{
   cursor: pointer;
 }
 .firstWindow{
@@ -139,6 +156,13 @@ html {
  
   display:inline-flexbox;
   
+}
+#photoHomeContent{
+  flex-direction: row;
+  max-height: 100%;
+  overflow-y: scroll;
+
+  display:inline-flexbox;
 }
 #nav{
   margin-top: 20px;
