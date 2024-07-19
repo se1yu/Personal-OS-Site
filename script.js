@@ -389,6 +389,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   
+  var moon = document.getElementById("moon");
+  var body = document.body;
+
+  // Toggles
+  var backgrounds = ["bgChange1", "bgChange2"]
+  var currentIndex = 0;
+
+  moon.addEventListener("click", function() {
+    if (body.classList.contains(backgrounds[currentIndex])) {
+      body.classList.remove(backgrounds[currentIndex]);
+    }
+    currentIndex = (currentIndex + 1) % backgrounds.length;
+    body.classList.add(backgrounds[currentIndex]);
+  });
+  
+
+
+  
   /* pfp content
   var pfpContent = [
     {
