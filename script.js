@@ -329,6 +329,27 @@ document.addEventListener("DOMContentLoaded", function () {
           <img src="https://cloud-e2jyb8csc-hack-club-bot.vercel.app/8image.png">
           <img src="https://cloud-e2jyb8csc-hack-club-bot.vercel.app/9image.png">
           <img src="https://cloud-5q2kaj56z-hack-club-bot.vercel.app/0image.png">
+          <img src="https://cloud-8ovj7jjos-hack-club-bot.vercel.app/0image.png" alt="Image 1">
+          <img src="https://cloud-8ovj7jjos-hack-club-bot.vercel.app/1image.png" alt="Image 2">
+          <img src="https://cloud-8ovj7jjos-hack-club-bot.vercel.app/2image.png" alt="Image 3">
+          <img src="https://cloud-8ovj7jjos-hack-club-bot.vercel.app/3image.png" alt="Image 4">
+          <img src="https://cloud-8ovj7jjos-hack-club-bot.vercel.app/4image.png" alt="Image 5">
+          <img src="https://cloud-8ovj7jjos-hack-club-bot.vercel.app/5image.png" alt="Image 6">
+          <img src="https://cloud-8ovj7jjos-hack-club-bot.vercel.app/6image.png" alt="Image 7">
+          <img src="https://cloud-8ovj7jjos-hack-club-bot.vercel.app/7image.png" alt="Image 8">
+          <img src="https://cloud-8ovj7jjos-hack-club-bot.vercel.app/8image.png" alt="Image 9">
+          <img src="https://cloud-8ovj7jjos-hack-club-bot.vercel.app/9image.png" alt="Image 10">
+          <img src="https://cloud-flkdrvyyp-hack-club-bot.vercel.app/0image.png" alt="Image 1">
+          <img src="https://cloud-flkdrvyyp-hack-club-bot.vercel.app/1image.png" alt="Image 2">
+          <img src="https://cloud-flkdrvyyp-hack-club-bot.vercel.app/2image.png" alt="Image 3">
+          <img src="https://cloud-flkdrvyyp-hack-club-bot.vercel.app/3image.png" alt="Image 4">
+          <img src="https://cloud-flkdrvyyp-hack-club-bot.vercel.app/4image.png" alt="Image 5">
+          <img src="https://cloud-flkdrvyyp-hack-club-bot.vercel.app/5image.png" alt="Image 6">
+          <img src="https://cloud-flkdrvyyp-hack-club-bot.vercel.app/6image.png" alt="Image 7">
+          <img src="https://cloud-flkdrvyyp-hack-club-bot.vercel.app/7image.png" alt="Image 8">
+          <img src="https://cloud-flkdrvyyp-hack-club-bot.vercel.app/8image.png" alt="Image 9">
+          <img src="https://cloud-flkdrvyyp-hack-club-bot.vercel.app/9image.png" alt="Image 10">
+          
           </div>
       </div>
       `
@@ -384,7 +405,11 @@ document.addEventListener("DOMContentLoaded", function () {
       content:
       `
       <h1> Programming! </h1>
-      <p> testttttttt </p>
+      <p> Here are some projects I have done so far! <b>This website</b> is one of them! From the pictures to all the windows, I programmed them with HTML, CSS, and Javascript, thanks to this <a href="https://jams.hackclub.com/batch/webOS"> Hack Club Jam by Thomas S.!</a> Most of my other sites are spinoffs from Hack Club Jams as well.  </p>
+
+       
+       <img src= "./assets/catCatchSushi.gif" >
+       <p> Also, I build (and drew all the sprites) in this simple pixel game, <b>"Cat catch sushi"</b> with Javascript! I contributed to Hack Club's Sprig Console game library that has over 400+ games. You can play it yourself online <a href="https://sprig.hackclub.com/share/p5NbDZ1yQwmHB2v4qb9C"> here! </a> </p>
       `
     },
     {
@@ -392,7 +417,17 @@ document.addEventListener("DOMContentLoaded", function () {
       content:
       `
       <h1> Here are some things I have 3D Modelled! </h1>
-      <p>testtt <-- </p>
+      <div id="techPhotos">
+      <p> 
+        <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/0image.png" alt="Image 1">
+        <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/1image.png" alt="Image 2">
+        <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/2image.png" alt="Image 3">
+        <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/3image.png" alt="Image 4">
+        <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/4image.png" alt="Image 5">
+        <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/5image.png" alt="Image 6">
+        <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/6fishfeeder.jpg" alt="Image 7"> 
+      </p>
+      </div>
       `
     },
     {

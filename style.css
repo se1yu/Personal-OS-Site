@@ -186,6 +186,14 @@ body.bgChange2{
   display:inline-flexbox;
   
 }
+
+#techPhotos{
+  width: 300px; 
+  height: auto; 
+  margin: 0px auto; 
+  border-radius: 16px;
+  
+}
 #photoHomeContent{
   flex-direction: row;
   max-height: 100%;
