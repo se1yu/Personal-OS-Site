@@ -20,11 +20,15 @@ body.bg{
 }
 
 body.bgChange1{
-  background-image: url(https://cloud-9l22uxapm-hack-club-bot.vercel.app/5image.png);
+  background-image: url(https://cloud-8lg3arssi-hack-club-bot.vercel.app/0image.png);
+ 
   
 }
 body.bgChange2{
-  background-image: url(https://cloud-8lg3arssi-hack-club-bot.vercel.app/0image.png);
+  background-image: url(https://cloud-9l22uxapm-hack-club-bot.vercel.app/5image.png);
+ 
+  
+  
 }
 
 .profile {
@@ -204,18 +208,21 @@ body.bgChange2{
 }
 #nav{
   margin-top: 20px;
-  background-color: #b3bdc2;
+  
   display: flex;
   cursor: pointer;
   flex-direction: column;
   justify-content: center;
   border-radius: 16px;
   text-align: left;
-  padding: 16px;
+  
   box-sizing: border-box;
   width:150px;
   overflow-y: auto;
   max-height:100%; 
+}
+#techNav{
+  margin-top: 20px;
 }
 .hidden{
   display:none;

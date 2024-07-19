@@ -368,14 +368,39 @@ document.addEventListener("DOMContentLoaded", function () {
   for (let i = 0; i<content.length; i++){
     addToNav(i)
   }
+  
   // Tech Projects content
   var techContent = [
     {
-      title: "tech", 
+      title: "Welcome", 
       content:
       `
-      <h1> header test </h1>
-      <p> testssssssssssss </p>
+      <h1> Welcome to my more technical projects! </h1>
+      <p> Here are some things about me! I have 2 main certifications: A python entry certification and an AUTOCAD Fusion360 certification. I am a 3x Girls Who Code Alumni! That being said, explore some of my projects on the left here <-- </p>
+      `
+    },
+    {
+      title: "Coding Projects", 
+      content:
+      `
+      <h1> Programming! </h1>
+      <p> testttttttt </p>
+      `
+    },
+    {
+      title: "3D Modeling", 
+      content:
+      `
+      <h1> Here are some things I have 3D Modelled! </h1>
+      <p>testtt <-- </p>
+      `
+    },
+    {
+      title: "PCB/Hardware", 
+      content:
+      `
+      <h1> filler </h1>
+      <p> testttting</p>
       `
     },
     ]
@@ -387,6 +412,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   setTechGalleryContent(0)
 
+  
 
   
   var moon = document.getElementById("moon");
@@ -404,7 +430,30 @@ document.addEventListener("DOMContentLoaded", function () {
     body.classList.add(backgrounds[currentIndex]);
   });
   
+  // adding a nav to tech
+  function addToTechNav(index) { //display on the side bar
 
+    var techNav = document.querySelector("#techNav"); //sidebar is the navigation
+    var techNote = techContent[index];
+    var techNewDiv = document.createElement("div");
+    //diff bg colors
+    var backgroundColors = ["#f2f2f2", "#e6f7ff", "#ffe6e6", "#e6ffe6"];
+    var bgColor = backgroundColors[index % backgroundColors.length];
+    techNewDiv.innerHTML = `
+        <div style="background-color: ${bgColor}; padding: 10px; margin-bottom: 10px; cursor: pointer; border-radius: 5px;">
+          <p style="margin: 0; text-decoration: underline;">${techNote.title}</p>
+        </div>
+      `;
+
+    techNewDiv.addEventListener("click",function() {
+      setTechGalleryContent(index);
+    });
+
+      techNav.appendChild(techNewDiv);
+  }
+  for (let i = 0; i<techContent.length; i++){
+    addToTechNav(i)
+  }
 
   
   /* pfp content
