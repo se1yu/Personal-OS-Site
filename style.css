@@ -75,6 +75,7 @@ body.bgChange2{
 
 .photoPhotos img{
   width: 300px;
+  
   height: auto;
   margin: 5px;
   border-radius: 16px;
@@ -188,10 +189,34 @@ body.bgChange2{
 }
 
 #techPhotos{
-  width: 300px; 
+  width: auto; 
   height: auto; 
   margin: 0px auto; 
   border-radius: 16px;
+}
+#techPhotos img {
+  width: 400px; 
+  height: auto;
+  border-radius: 16px;
+  display: block; 
+  margin: 8px auto;
+}
+
+
+#hardwarePhotos{
+  border-radius: 16px;
+  display: block; 
+  margin: 8px auto;
+}
+#hardwarePhotos img{
+ 
+  height: auto;
+  border-radius: 16px;
+  display: block; 
+  margin: 8px auto;
+}
+#trailPin img{
+  width:200px;
   
 }
 #photoHomeContent{

@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Welcome",
       //date: "06/28/2023",
       content: `
-       <h1 style=" font-size: 20px; ">Welcome to my Art Gallery!</h1>
+       <h1 style=" font-size: 20px; "> Visit <a href="https://new.express.adobe.com/webpage/kT4AJjaVtb2Qx"> jeslynchang.me</a> for a faster experience! </h1>
       <p>Hello! Welcome to my art gallery! I have a couple categories on the left here that you can navigate to. Or you can read my enlightment and origin below!</p>
        <p>
          Art has always been a fun creative outlet for me! I love experimenting with design, mediums, and digital pieces. Every piece that I complete always has a satisfactory feeling to it. I've been interested in art since I was 9 years old. Since then, I look to always expand my humanistic side of me.
@@ -418,15 +418,28 @@ document.addEventListener("DOMContentLoaded", function () {
       `
       <h1> Here are some things I have 3D Modelled! </h1>
       <div id="techPhotos">
-      <p> 
-        <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/0image.png" alt="Image 1">
-        <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/1image.png" alt="Image 2">
-        <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/2image.png" alt="Image 3">
-        <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/3image.png" alt="Image 4">
-        <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/4image.png" alt="Image 5">
-        <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/5image.png" alt="Image 6">
+        <p> 
+        <h2> Sylveon Keychain</h2>
+        <p> After developing an addition to Pokémon, I wanted a keychain of my favorite eeveelution, but didn't want to buy merch- so I made my own! This is my model of a Sylveon keychain that I created in Fusion 360. Inside is a cavity, where you can stop a print to place an NFC sticker inside, sorta like microchipping your pet. <a href="https://github.com/se1yu/Sylveon-NFC-Keychain"> Repo here! </a></p> 
+        <img src=/assets/sylveon-keychain.png alt="Sylveon Keychain">
+        <h2> Fish Feeder </h2>
+        <p> Modelled and printed a fish feeding portal for my fishtank! Now, I have many floater plants covering the top of my fishtank, but the portal allows for me to feed them through a shaped opening.</p> 
         <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/6fishfeeder.jpg" alt="Image 7"> 
-      </p>
+          
+        <h2> Miscellaneous 3D Models Created in Fusion360</h2>
+        <p> A miniature golf course.</p>
+        <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/0image.png" alt="Image 1">
+        <p> Coke bottle. </p>
+          <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/1image.png" alt="Image 2">
+        <p> My old phone model: an iPhone 8+! </p>
+          <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/2image.png" alt="Image 3">
+          <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/3image.png" alt="Image 4">
+        <p> An online assembled santa lego model, after I finished modelling each lego brick in the set! </p>
+          <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/4image.png" alt="Image 5">
+        <p> A halloween decoration model with a cat peeking out from a carved pumpkin! </p>
+          <img src="https://cloud-8ydyquzpo-hack-club-bot.vercel.app/5image.png" alt="Image 6">
+          
+        </p>
       </div>
       `
     },
@@ -434,8 +447,22 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "PCB/Hardware", 
       content:
       `
-      <h1> filler </h1>
-      <p> testttting</p>
+      <div id="hardwarePhotos">
+        <h1> Some PCB projects! </h1>
+        <p> Below are some projects I've created with a combination of code, 3D modelling, and printer circuit board (PCB) design!</p>
+          <h2> NigiriPad </h2>
+          <p> NigiriPad is a nigiri sushi and cat inspired macropad (essentially a mini-keyboard) that can be used with macro shortcuts. NigiriPad was built for the intent to play the video game, "Osu!". Check out 
+          the <a href= "https://github.com/se1yu/NigiriPad"> GitHub repo! </a> </p>
+          <img style="width:400px;" src= "/assets/NigiriPad-img.png" alt="NigiriPad"> 
+        <h2> NFC-Chipped Business Card </h2> 
+        <p> This business card is a simple business card with an NFC chip that can be programmed to send a link to your website or social media. </p>
+          <h2> "The Trail" Enamel Pin  </h2>       
+          <p> This is a simple enamel pin design that I created for participants in Hack Club's <a href="https://trail.hackclub.com/"> The Trail</a> event. <a href="https://github.com/se1yu/theTrail-PCBBadge"> Repo here. </a> </p>
+            <div style = "display: flex;" id="trailPin"> 
+              <img src= "/assets/trailPin.png" alt="The Trail Enamel Pin">
+              <img src= "/assets/trailPin2.png" alt="The Trail Enamel Pin">
+            </div>
+          </div>
       `
     },
     ]
